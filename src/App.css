@@ -1,0 +1,130 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+  background: linear-gradient(
+    90deg, rgba(47,17,255,1) 0%, rgba(100,116,255,1) 100%
+  );
+}
+
+.todo-app{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 530px;
+  min-height: 600px;
+  text-align: center;
+  background: #161a2b;
+  margin: 130px auto;
+  padding-bottom: 40px;
+  border-radius: 12px;
+}
+
+h1{
+  color: azure;
+  font-size: 30px;
+  margin: 35px 0;
+}
+
+.complete{
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.todo-form{
+  margin-bottom: 35px;
+}
+
+.todo-input{
+  color: azure;
+  width: 325px;
+  background: transparent;
+  border: 2px solid #5d0cff;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+  padding: 20px 35px 20px 18px;
+}
+
+.todo-input::placeholder{
+  color: azure;
+}
+
+.todo-button{
+  color: azure;
+  text-transform: capitalize;
+  outline: none;
+  padding: 20px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgba(20,160,255,1) 0%,
+    rgba(20,122,255,1) 100%
+  );
+}
+
+.todo-input.edit{
+  background: linear-gradient(90deg,
+  rgba(20,160,255,1) 0%,
+  rgba(18,122,255,1) 100%);
+  padding: 16px 22px;
+}
+
+.todo-container{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+
+.todo-row{
+  display: flex;
+  justify-content: space-between;
+  margin: 4px auto;
+  align-items: center;
+  color: azure;
+  background: linear-gradient(90deg,
+  rgba(255,120,20,1) 0%,
+  rgba(255,85,17,1) 100%);
+  padding: 18px;
+  width: 90%;
+  border-radius: 5px;
+}
+
+.icons{
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.delete-icon{
+  color: azure;
+  margin-right: 5px;
+}
+
+.edit-icon{
+  color: azure;
+}
+
+.todo-row:nth-child(4n+1){
+  background: linear-gradient(90deg,
+  rgba(95,12,255,1) 0%,
+  rgba(155,0,250,1) 100%);
+}
+
+.todo-row:nth-child(4n+2){
+  background: linear-gradient(90deg,
+  rgba(255,12,240,1) 0%,
+  rgba(250,0,140,1) 100%);
+}
+
+.todo-row:nth-child(4n+3){
+  background: linear-gradient(90deg,
+  rgba(20,160,255,1) 0%,
+  rgba(20,120,255,1) 100%);
+}
